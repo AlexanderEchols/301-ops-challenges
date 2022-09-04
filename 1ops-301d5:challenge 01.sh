@@ -12,3 +12,4 @@ CWD=$(date +"%Y-%m-%d_%H-%M-%S")
 cp /var/log/syslog . 
 # appends date and time to syslog
 mv syslog syslog$CWD
+#  End
