@@ -12,21 +12,19 @@ import os
 # theway = ""
 ### Read user input here into a variable
 theway = input("what is your path? ")
-print(theway)
+# print(theway)
 # Declaration of functions
-
-### Declare a function here
-
-for (root, dirs, files) in os.walk(theway):
-    ### Add a print command here to print ==root==
-    print(root)
-    ### Add a print command here to print ==dirs==
-    print(dirs)
-    ### Add a print command here to print ==files==
-    print(files)
+def fetch(theway):
+    for (root, dirs, files) in os.walk(theway):
+        ### Add a print command here to print ==root==
+        print(root)
+        ### Add a print command here to print ==dirs==
+        print(dirs)
+        ### Add a print command here to print ==files==
+        print(files)
 
 # Main
 
 ### Pass the variable into the function here
-
+fetch(theway)
 # End
